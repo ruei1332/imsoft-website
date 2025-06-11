@@ -1,0 +1,13 @@
+# robots.txt for www.imsoft.com.tw
+
+User-agent: *
+Allow: /
+
+Crawl-delay: 1
+
+Sitemap: https://www.imsoft.com.tw/sitemap.xml
+
+Disallow: /_next/
+
+Allow: /*.webp
+Allow: /*.svg

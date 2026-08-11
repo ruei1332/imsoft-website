@@ -2,7 +2,8 @@
 <html lang="zh-TW">
   <head>
     <meta charset="utf-8" /><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-src 'none'; worker-src 'none'; media-src 'none'; upgrade-insecure-requests">
-    <title>IMSOFTWARE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <!--
       靜態匯出沒有 middleware,GitHub Pages 也不支援轉址規則,
       所以根路徑只能靠這份 HTML 自己把訪客送到預設語系。
@@ -11,15 +12,39 @@
       routing.localeDetection 為 false,預設語系固定 zh-TW,
       這裡不做語系偵測,行為才與原本的 next-intl middleware 一致。
     -->
-    <!--
-      刻意不加 noindex:這個網址是 hreflang 的 x-default 目標,
-      標成 noindex 會讓搜尋引擎連帶不信任這條 x-default 宣告。
-      meta refresh 本身就是 Google 認可的轉址訊號,權重會傳給 /zh-TW/。
-    -->
     <meta http-equiv="refresh" content="0; url=/zh-TW/" />
     <script>
       location.replace("/zh-TW/" + location.search + location.hash);
     </script>
+
+    <!--
+      下面這個 title 只是 dev 時的佔位。正式產物的 title 與整組 OG／Twitter
+      標籤由 scripts/inject-root-meta.js 在建置後注入,文案直接取自
+      messages/<預設語系>.json,不在這裡重複維護。
+
+      為什麼這一頁需要 OG:根網址是最常被分享的形式,而 LINE / Slack /
+      Discord / Facebook 的預覽爬蟲不執行 JS,多半也不跟隨 meta refresh
+      —— 它們讀到的就是這一頁,不是 /zh-TW/。
+    -->
+    <title>華擎軟體科技 IMSOFTWARE｜高品質軟體開發、系統整合與 AI 應用</title>
+
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+      <meta name="description" content="華擎軟體科技專注於高品質軟體開發與系統整合，並積極投入 RAG、AI Agents、LangChain/LangGraph 等生成式 AI 技術並部署於 AWS，是您最值得信賴的技術合作夥伴。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.imsoft.com.tw/" />
+    <meta property="og:site_name" content="IMSOFTWARE" />
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:title" content="華擎軟體科技 IMSOFTWARE｜高品質軟體開發、系統整合與 AI 應用" />
+    <meta property="og:description" content="華擎軟體科技專注於高品質軟體開發與系統整合，並積極投入 RAG、AI Agents、LangChain/LangGraph 等生成式 AI 技術並部署於 AWS，是您最值得信賴的技術合作夥伴。" />
+    <meta property="og:image" content="https://www.imsoft.com.tw/og.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="華擎軟體科技 IMSOFTWARE" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="華擎軟體科技 IMSOFTWARE｜高品質軟體開發、系統整合與 AI 應用" />
+    <meta name="twitter:description" content="華擎軟體科技專注於高品質軟體開發與系統整合，並積極投入 RAG、AI Agents、LangChain/LangGraph 等生成式 AI 技術並部署於 AWS，是您最值得信賴的技術合作夥伴。" />
+    <meta name="twitter:image" content="https://www.imsoft.com.tw/og.png" />
   </head>
   <body>
     <a href="/zh-TW/">IMSOFTWARE</a>

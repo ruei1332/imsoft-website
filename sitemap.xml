@@ -1,42 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- 主頁面 -->
-  <url>
-    <loc>https://www.imsoft.com.tw/</loc>
-    <lastmod>2025-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-  <!-- 發展策略區塊 -->
-  <url>
-    <loc>https://www.imsoft.com.tw/#strategy</loc>
-    <lastmod>2025-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- 關於我們區塊 -->
-  <url>
-    <loc>https://www.imsoft.com.tw/#about</loc>
-    <lastmod>2025-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- 服務項目區塊 -->
-  <url>
-    <loc>https://www.imsoft.com.tw/#services</loc>
-    <lastmod>2025-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- 聯絡我們區塊 -->
-  <url>
-    <loc>https://www.imsoft.com.tw/#contact</loc>
-    <lastmod>2025-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<url>
+<loc>https://www.imsoft.com.tw/en/</loc>
+<xhtml:link rel="alternate" hreflang="x-default" href="https://www.imsoft.com.tw/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://www.imsoft.com.tw/en/" />
+<xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.imsoft.com.tw/zh-TW/" />
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
+<url>
+<loc>https://www.imsoft.com.tw/zh-TW/</loc>
+<xhtml:link rel="alternate" hreflang="x-default" href="https://www.imsoft.com.tw/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://www.imsoft.com.tw/en/" />
+<xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.imsoft.com.tw/zh-TW/" />
+<changefreq>monthly</changefreq>
+<priority>1</priority>
+</url>
 </urlset>
